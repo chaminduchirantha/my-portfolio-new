@@ -47,56 +47,39 @@
 <!--    </div>-->
 <!--</nav>-->
 
-<section id="home-container" style="
-    width: 100vw;
-    height: 100vh;
-    background-image:url('Assets/images/person-working-html-computer.jpg');
-    background-size: cover;
-    opacity: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-align: center;
-">
-    <!-- Optional overlay to darken background for better text contrast -->
-    <div style="
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-color: rgba(0, 0, 0, 0.1); /* <-- 0.5 = 50% opacity */
-        z-index: -100;">
-    </div>
+<section id="home-container" class="position-relative text-center text-white d-flex align-items-center justify-content-center" style="width: 100vw; height: 100vh; background-image: url('Assets/images/person-working-html-computer.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.2); z-index: 1;"></div>
 
     <!-- Content -->
-    <div style="position: relative; z-index: 2; max-width: 950px; padding: 20px">
-        <h1 class="display-4 fw-bold" style="color: wheat">Hello 👋 I'm Chamindu Chirantha</h1>
-        <h1 class="display-4 fw-bold" style="color: wheat; font-size: 45px">Fronted Developer and Ui/Ux Designer.</h1>
-        <p style="font-size: 1.35rem;">
-            I'm currently focused on expanding my experience in web design and development. I'm studying to be a Software Engineer at the Institute of Software Engineering.        </p>
+    <div class="container position-relative z-2" style="max-width: 950px;">
+        <h1 class="display-4 fw-bold text-warning" style="position:relative;top: 29px">Hello 👋 I'm Chamindu Chirantha</h1>
+        <h2 class="fw-bold text-warning" style="font-size: 45px;">Fronted Developer and UI/UX Designer.</h2>
+        <p class="fs-5 mt-3">
+            I'm currently focused on expanding my experience in web design and development. I'm studying to be a Software Engineer at the Institute of Software Engineering.
+        </p>
 
         <!-- Social Media Icons -->
-        <div style="margin-top: 20px; z-index: 2; position: relative;">
-            <a href="https://www.facebook.com/" target="_blank" style="margin: 0 10px; color: wheat; font-size: 2.0rem; text-decoration: none;">
+        <div class="mt-4">
+            <a href="https://www.facebook.com/" target="_blank" class="text-warning fs-3 mx-3 text-decoration-none">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="margin: 0 10px; color: wheat; font-size: 2.0rem; text-decoration: none;">
+            <a href="" target="_blank" class="text-warning fs-3 mx-3 text-decoration-none">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" style="margin: 0 10px; color: wheat; font-size: 2.0rem; text-decoration: none;">
+            <a href="" target="_blank" class="text-warning fs-3 mx-3 text-decoration-none">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" style="margin: 0 10px; color: wheat; font-size: 2.0rem; text-decoration: none;">
-                <i class="fa-brands fa-whatsapp"></i>
+            <a href="" target="_blank" class="text-warning fs-3 mx-3 text-decoration-none">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
 
-
-        <a href="#" class="btn btn-lg btn-login mt-3" style="color: wheat; border: 2px solid wheat; border-radius: 10px">Download Cv</a>
+        <a href="#" class="btn btn-outline-warning btn-lg mt-4 rounded">Download CV</a>
     </div>
 </section>
+
 
 <section id="about-container" class="py-5" style="background-color: #112233; position: relative; color: wheat">
     <div class="container">
@@ -194,6 +177,93 @@
 <!--    </div>-->
 
 <!--</section>-->
+
+<section id="skill-container" class="py-5 text-center text-warning" style="background-color: #11293d;">
+    <div class="container">
+        <h1 class="mb-5" style="font-size: 40px;">Skills and Tools</h1>
+        <div class="row justify-content-center g-3">
+
+            <!-- Example Skill Card -->
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="Assets/images/img_2.png" alt="MySQL" width="60">
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <div class="card bg-dark border-info-subtle border-2 rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+                     style="width: 100px; height: 100px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="MySQL" width="60">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
