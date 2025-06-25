@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-card{
+    background-color: #11293d;
+    animation: box linear 19s infinite;
+}
+
+@keyframes box {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+#about-container{
+    background: linear-gradient(45deg, #213b50, rgb(48, 60, 77), #124156, rgba(255, 215, 0, 0.53));
+    z-index: -1;
+    animation: borderGlow 15s linear infinite;
+    background-size: 350% 350%;
+}
+
+@keyframes borderGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#custom-image{
+    transition-duration: 800ms;
+}
+
+#custom-image:hover{
+    transform: scale(1.1);
+}
